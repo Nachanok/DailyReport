@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="DailyReport" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>model.Account</class>
+		<class>model.Category</class>
+		<class>model.Customer</class>
+		<class>model.Departmentitem</class>
+		<class>model.Holiday</class>
+		<class>model.Privatetasklist</class>
+		<class>model.PrivatetasklistPK</class>
+		<class>model.Privilegeitem</class>
+		<class>model.Project</class>
+		<class>model.Projecttask</class>
+		<class>model.ProjecttaskPK</class>
+		<class>model.Projectversion</class>
+		<class>model.ProjectversionPK</class>
+		<class>model.Reportsetting</class>
+		<class>model.Taskcode</class>
+		<class>model.TaskcodePK</class>
+		<class>model.Usertasklist</class>
+		<class>model.Usertimesheet</class>
+		<class>model.UsertimesheetPK</class>
+		<class>model.Timestamp</class>
+		<class>model.TimestampPK</class>
+
+       <properties>
+       <property name="eclipselink.ddl-generation" value="create-tables"/>
+       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/DailyReport"/>
+       <property name="javax.persistence.jdbc.user" value="root"/>
+       <property name="javax.persistence.jdbc.password" value="123456"/>
+       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+       <property name="eclipselink.jdbc.exclusive-connection.is-lazy" value="false"/> 
+    </properties>
+	</persistence-unit>
+</persistence>
+

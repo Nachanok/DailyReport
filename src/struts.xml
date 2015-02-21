@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+	<constant name="struts.mapper.action.prefix.enabled" value="true" />
+    <package name="DailryReport" extends="struts-default">
+        <action name="AuthenticateAction" class="action.LoginAction" method="authenticate">
+            <result name="success">Index.jsp</result>
+            <result name="error">Login.jsp</result>
+        </action>
+        <action name="doubleSelectAction" class="action.ProjectTaskAction" method="display">
+			<result name="none">Taskpage.jsp</result>
+   		</action>
+   		<action name="disableTaskAction" class="action.ProjectTaskAction" method="disable">
+   			<result name="none">Taskpage.jsp</result>
+   		</action>
+   		<action name="Addtimesheet" class="action.AddTimeSheetAction" method="execute">
+   			<result name="success">Index.jsp</result>
+   		</action>
+   		<action name="generateReport" class="action.ReportAction" method="execute">
+   			<result name="success">ReportPop.jsp</result>
+   			<result name="individual">IndividualReport.jsp</result>
+   			<result name="error">Report.jsp</result>
+   		</action>
+   		<action name="weekReport" class="action.ReportAction" method="weeklyReport">
+   			<result name="success">WeeklyReport.jsp</result>
+   		</action>
+   		<action name="taskpageLink" class="action.LoginAction" method="taskLink">
+   			<result name="success">Taskpage.jsp</result>
+   		</action>
+   		<action name="logOut" class="action.LoginAction" method="logOut">
+   			<result name="success">Login.jsp</result>
+   		</action>
+   		<action name="Showtimesheet" class="action.AddTimeSheetAction" method="show">
+   			<result name="none">Index.jsp</result>
+   		</action>
+   		<action name="AddUserAccount" class="action.AddUserAccountAction" method="execute">
+   			<result name="success">UserManagement.jsp</result>
+   			<result name="error">UserManagement.jsp</result>
+   		</action>
+   		<action name="alluser" class="action.AddUserAccountAction" method="userlink">
+   			<result name="success">UserManagement.jsp</result>
+   		</action>
+   		<action name="selectremoveuser" class="action.AddUserAccountAction" method="disable">
+   			<result name="success">UserManagement.jsp</result>
+   		</action>
+        
+    </package>
+</struts>
