@@ -1,8 +1,9 @@
 # DailyReport
 Sample project that I do in part of user account management.  
+This project use Struts2 framework.
 json file is in webCotent folder   
 model is in src\model  
-DAO is in dao dao folder  
+DAO is in dao folder  
 Action of this program is in action folder  
 JS is contain bootstrap jscript scriptfile  
 
