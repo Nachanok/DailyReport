@@ -1,10 +1,10 @@
 # DailyReport
-Sample project that I do in part of user account management.
+Sample project that I do in part of user account management.  
 json file is in webCotent folder   
 model is in src\model  
 DAO is in dao dao folder  
-Action of this program is in action folder
-JS is contain bootstrap jscript scriptfile
+Action of this program is in action folder  
+JS is contain bootstrap jscript scriptfile  
 
 # TO Run this project
 Server Requirement  
